@@ -60,7 +60,7 @@ public class CacheAspect {
 		logger.debug("Key = " + key);
 		Object result = cache.get(key);
 		if (result == null) {
-			logger.debug("Result not yet cached. Must to be calculated...");
+			logger.debug("Result not yet cached. Must be calculated...");
 			result = thisJoinPoint.proceed();
 			logger.info("Storing calculated value '" + result + "' to cache");
 			cache.put(key, result);

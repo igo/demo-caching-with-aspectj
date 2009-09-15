@@ -5,6 +5,8 @@ import org.apache.log4j.Logger;
 /**
  * Sample app that uses AspectJ for caching
  * 
+ * @author Igor Urmincek
+ * 
  */
 public class App {
 
